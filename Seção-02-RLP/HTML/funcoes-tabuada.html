@@ -11,15 +11,16 @@
    <h1>Funções - Tabuada</h1>
 
    <button onclick="mostrarTabuda()">Mostrar Tabuada</button>
-
    <button onclick="LimparTabuada()">Limpar Tabuada</button>
-
    <div id="output"></div>
 
    <script>
 
       let msg = ""
       function mostrarTabuda() {
+         if( i == 10) {
+            return
+         }
          const output = document.getElementById("output")
          let numero = Number(prompt("Digite um número:"))
          
