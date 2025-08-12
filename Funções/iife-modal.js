@@ -4,14 +4,15 @@
 // }
 // init()
 
-   (function (win, doc) {
-      let isValid = true
-      win.alert("Olá mundo")
-      console.log("init menu", isValid)
+(function (win, doc) {
+   "use strict"
+   let isValid = true
+   console.log("init menu", isValid)
 
-      function init(){
-         console.log("init do modal")
-      }
-      init()
-      
-   })(window, document)
+   function init() {
+      console.log("init do modal")
+   }
+   init()
+
+})(window, document)
+
