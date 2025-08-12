@@ -4,13 +4,13 @@
 // }
 // init()
 
-   (function () {
-      let isValid = false
-      console.log("init menu", isValid)
+   // (function () {
+   //    let isValid = false
+   //    console.log("init menu", isValid)
 
-      function init(){
-         console.log("init do menu")
-      }
-      init()
-      
-   })()
+   //    function init(){
+   //       console.log("init do menu")
+   //    }
+   //    init()
+
+   // })()
