@@ -19,7 +19,7 @@ function classifyIMC(imc) {
    
    if (imcNumber < 17) {
       return "Muito abaixo do peso";
-   } else if (imcNumber >= 17 && imcNumber <= 18.4) {
+   } else if (imcNumber <= 24.9) {
       return "Abaixo do peso";
    } else if (imcNumber >= 18.5 && imcNumber <= 24.9) {
       return "Peso normal";
