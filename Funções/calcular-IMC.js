@@ -1,4 +1,4 @@
-function calculateIMC(peso, altura) {
+function calculateIMC(peso, altura, callback) {
    // Verifica se as entradas são números válidos e positivos.
    if (typeof peso !== 'number' || typeof altura !== 'number' || peso <= 0 || altura <= 0) {
       
@@ -8,6 +8,9 @@ function calculateIMC(peso, altura) {
    // Calculando o IMC.
    const resultIMC = peso / Math.pow(metro, 2);
    // Retorna o resultado com duas casas decimais, o que é um formato mais comum para o IMC.
+   if(typeof callback === "function") {
+      return callback(resultIMC)
+   }
    return resultIMC.toFixed(2);
 }
 
@@ -34,6 +37,5 @@ function classifyIMC(imc) {
    }
 }
 
-let João = calculateIMC(80, 170)
-let classicao = classifyIMC(João)
-console.log(classicao)
+let João = calculateIMC(80, 170, classifyIMC)
+console.log(João)
